@@ -55,8 +55,10 @@ function MenuList({ menu }) {
               className="form-select mb-3"
               onChange={adetHandler}
             >
-              {[...Array(10).keys()].map((x) => (
-                <option value={x + 1}>{x + 1}</option>
+              {[...Array(10).keys()].map((x, index) => (
+                <option key={index} value={x + 1}>
+                  {x + 1}
+                </option>
               ))}
             </select>
           </div>

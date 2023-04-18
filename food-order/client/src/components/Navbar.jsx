@@ -36,8 +36,8 @@ function Navbar() {
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   Sepet
-                  <i class="fa-sharp fa-solid fa-bag-shopping mx-2"></i>
-                  <span class="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-danger">
+                  <i className="fa-sharp fa-solid fa-bag-shopping mx-2"></i>
+                  <span className="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-danger">
                     1
                   </span>
                 </a>
