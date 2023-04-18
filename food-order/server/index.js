@@ -13,16 +13,6 @@ const burgerModel = require("./models/BurgerModel");
 app.use(express.json());
 app.use(cors());
 
-//getFoods servisi
-app.get("/getFoods", async (req, res) => {
-  try {
-    const foods = await burgerModel.find({});
-    res.send(foods);
-  } catch (err) {
-    console.log(err);
-  }
-});
-
 //serverımızı inşa edeceğimiz portu belirledik.
 var port = 4000;
 app.listen(4000, () => {
