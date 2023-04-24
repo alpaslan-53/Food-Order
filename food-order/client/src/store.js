@@ -3,10 +3,12 @@ import thunk from "redux-thunk";
 import { getAllBurgersReducer } from "./reducers/burgerReducers";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { addToCartReducer } from "./reducers/cartReducers";
+import { registerUserReducer } from "./reducers/userReducers";
 
 const finalReducer = combineReducers({
   getAllBurgersReducer: getAllBurgersReducer,
   addToCartReducer: addToCartReducer,
+  registerUserReducer: registerUserReducer,
 });
 
 const cartItems = localStorage.getItem("cartItems")

@@ -5,7 +5,7 @@ export const getAllBurgers = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      "http://localhost:4000/api/burgers/getBurgers"
+      "http://localhost:4000/api/burgers/getBurgers/"
     );
     console.log(response);
     dispatch({ type: "GET_BURGERS_SUCCESS", payload: response.data });

@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-mongoose.connect(
-  "mongodb+srv://admin:1234@cluster0.jrleiur.mongodb.net/food-order?retryWrites=true&w=majority"
-);
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING);
 
 //connection'ın açık kapalı olmasına göre iki farklı opsiyon verdiğimiz veritabanını dinleyen metotları yazalım.
 
